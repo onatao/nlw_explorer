@@ -19,6 +19,8 @@ nav {
   display: flex; /* defining display as flex */
   flex-direction: column; /* setting column format */
   gap: 16px; /* space between items (img, small, h1 etc) */
+  text-decoration: none; /* remove underline (after transform into a link) */
+  margin-bottom: 64px; /* setting bottom margin (space between posts) */
 }
 
 .memory small {
@@ -28,6 +30,7 @@ nav {
 
 .memory h1 {
   font-size: 32px;
+  color: #eaeaea;
 }
 
 .memory img {
