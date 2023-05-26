@@ -5,6 +5,11 @@
   box-sizing: border-box; /* box sizing config */
 }
 
+/* root configuration */
+:root {
+  font-size: 16px; /* default font-size */
+}
+
 /* customizing scroll bar */
 ::-webkit-scrollbar {
   width: 8px; /* scroll bar size */
@@ -62,11 +67,11 @@ nav {
 
 .memory small {
   color: #bebebf;
-  font-size: 12px;
+  font-size: 0.75rem; /* use the root prop */
 }
 
 .memory h1 {
-  font-size: 32px;
+  font-size: 2rem; /* use the root prop */
   color: #eaeaea;
 }
 
@@ -93,7 +98,7 @@ nav {
 }
 
 .memory p {
-  font-size: 18px;
+  font-size: 1.2rem; /* use the root prop */
   color: #bebebf;
   line-height: 28px; /* space between the lines */
 }
@@ -140,12 +145,39 @@ aside img:nth-child(2) {
 
 /* aside p configuration */
 aside p {
-  font-size: 32px;
+  font-size: 2rem; /* use the root prop */
   text-align: center;
 }
 
 /* span configuration */
 aside span {
-  font-size: 12px;
+  font-size: 0.75rem; /* use the root prop */
   color: #9e9ea0;
+}
+
+/* configuration for smaller screens */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    grid-template-columns: 1fr; /* config 1 column */
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+      "profile" /* first appear profile grid area */
+      "timeline"; /* and then timeline area */
+  }
+
+  /* removing right border */
+  aside {
+    border-right: none;
+    padding: 32px 12px;
+  }
+
+  /* config scroll */
+  nav {
+    overflow-y: visible; /* scroll bar will be showed in all screen */
+    padding: 22px;
+  }
 }
