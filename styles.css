@@ -1,0 +1,44 @@
+/* reseting padding and marging */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* box sizing config */
+}
+
+body {
+  background-color: #121215;
+  color: #eaeaea;
+  font-family: "Roboto", sans-serif; /* Roboto font, sans-serif font (alternative) */
+}
+
+nav {
+  padding: 64px; /* navigation padding */
+}
+
+.memory {
+  display: flex; /* defining display as flex */
+  flex-direction: column; /* setting column format */
+  gap: 16px; /* space between items (img, small, h1 etc) */
+}
+
+.memory small {
+  color: #bebebf;
+  font-size: 12px;
+}
+
+.memory h1 {
+  font-size: 32px;
+}
+
+.memory img {
+  width: 100%; /* image width always fit the page */
+  height: 280px; /* fixing image height */
+  object-fit: cover; /* background image wont be distorced when zoomed */
+  border-radius: 8px; /* rounded image border */
+}
+
+.memory p {
+  font-size: 18px;
+  color: #bebebf;
+  line-height: 28px; /* space between the lines */
+}
