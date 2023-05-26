@@ -3,3 +3,5 @@ Repository related to Explorer from &lt;nlw/> Spacetime event promoted by Rocket
 
 # Evento <nlw/> Spacetime - Trilha Explorer
 
+![demo](assets/demo.jpeg)
+
